@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.santos.hci502">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_foreground"
+        android:label="Shop Peachy"
+        android:roundIcon="@mipmap/ic_launcher_foreground"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".View.customer.AboutActivity"></activity>
+        <activity android:name=".View.customer.PurchaseIntent" />
+        <activity android:name=".View.customer.PurchaseHistory" />
+        <activity android:name=".View.customer.ViewProductIntent" />
+        <activity android:name=".View.admin.activity.EditProductIntent" />
+        <activity android:name=".View.admin.activity.AddProductActivity" />
+        <activity android:name=".View.admin.activity.TopUpIntentActivity" />
+        <activity
+            android:name=".View.login_register.SignInActivity"
+            android:theme="@style/AppThemeNoActionBarWithBattery" />
+        <activity
+            android:name=".View.drawer.AdminNavigationDrawer"
+            android:label="@string/title_activity_admin_navigation_drawer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".View.customer.AccountInfoActivity" />
+        <activity android:name=".View.login_register.RegisterActivity" />
+        <activity
+            android:name=".View.SplashScreen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".View.drawer.CustomerNavigationDrawer"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>
